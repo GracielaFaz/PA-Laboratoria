@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!--SECTION 1-->
+        <section id="page1" class="main-primera-seccion">
+            <h1>It's-a me Mario! </h1>
+            <p>!Esta es mi trvia! ¿cómo te llamas?</p>
+            <label>nombre:
+                <input type="text" name="nombre-del-usuario" placeholder="Tú nombre" id="name-input">
+            </label>
+            <button onclick=sendName() id="send-name">Enviar</button>
+        </section>
+        <!--SECCION 2-->
+        <section id="page2" class="main-segunda-seccion">
+            <h2>¡Hola <span id="name"></span>! Comencemos la Trivia.</h2>
+            <button onclick=startButton() >WAHOO!</button>
+        </section>
+        <!--SECCION 3-->
+        <section id="page3" class="main-tercera-seccion">
+            <h2>Responde las preguntas de la pelicula de Mario Bros</h2>
+            <div class="primera-pregunta">
+                <p>1. ¿Cómo se llama el hermano de Mario?</p>
+                <form>
+                    <label>
+                        <input type="radio" name="hermano-de-mario" value="luigui">Luigui
+                    </label>
+                    <label>
+                        <input type="radio" name="hermano-de-mario" value="bowser">Bowser
+                    </label>
+                    <label>
+                        <input type="radio" name="hermano-de-mario" value="yoshi">Yoshi
+                    </label>
+                </form>
+            </div>
+            <div class="segunda-pregunta">
+                <p>2. ¿De quién esta enamorado Bowser?</p>
+                <form>
+                    <label>
+                        <input type="radio" name="amor-de-bowser" value="princesa-peach">Princesa peach
+                    </label>
+                    <label>
+                        <input type="radio" name="amor-de-bowser" value="mario">Mario
+                    </label>
+                    <label>
+                        <input type="radio" name="amor-de-bowser" value="toad">Toad
+                    </label>
+                </form>
+            </div>
+            <div class="tercera-pregunta">
+                <p>3. ¿Cúal de los siguientes personajes no aparecio en la pelicula?</p>
+                <form>
+                    <label>
+                        <input type="radio" name="personaje-no-visto" value="donkey kong">Donkey Kong
+                    </label>
+                    <label>
+                        <input type="radio" name="personaje-no-visto" value="yoshi">Birdo
+                    </label>
+                    <label>
+                        <input type="radio" name="personaje-no-visto" value="rey bob-omb">Rey bob-omb
+                    </label>
+                </form>
+            </div>
+            <button id="final-button" onclick=sendAnswers()>Finalizar</button> 
+            <button class="reiniciar" onclick=reloadTrivia()>Reiniciar</button> 
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
