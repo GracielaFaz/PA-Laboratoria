@@ -29,37 +29,6 @@ sectionPageTree.style.display = "block";
 
 }
 
-/* 
-
-function firstQuestion() {
-  let firstAnswer = document.getElementById("a")
-  if(firstAnswer = "a") {
-    //correcto
-  } else {
-    //incorrecto
-  }
-}
-
-function firstQuestion() {
-  let firstAnswer = document.getElementById("a")
-  let
-  if(firstAnswer = "a") {
-    addClass = 
-  } else {
-    //incorrecto
-  }
-}
-
-  function firstQuestion() {
-    let firstAnswer = document.getElementById("a")
-    if(firstAnswer = "a") {
-      //correcto
-    } else {
-      //incorrecto
-    }
-}
-*/
-
 function sendAnswers() {
   alert("-La respuesta correcta de la pregunta 1 es Luigui. \n-La respuesta correcta de la pregunta 2 es Princesa Peach. \n-La respuesta correcta de la pregunta 3 es Birdo" );
 }
